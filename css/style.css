@@ -3,6 +3,7 @@
     height: 288px;
     overflow: hidden;
     position: relative;
+    left: 0px;
 }
 
 .heroSprite {

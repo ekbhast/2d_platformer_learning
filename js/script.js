@@ -15,16 +15,23 @@ body.append(heroDiv);
 heroDiv.append(heroSprite);
 
 //functions
+
+// movement hero
+function movementLeft (){
+    rightPosition = rightPosition + 1;
+
+    if (rightPosition > 5) {
+        rightPosition = 0;
+    }
+
+    heroSprite.style.left = `-${rightPosition*288}px`;
+    // console.log('Кнопка влево');
+}
+
+// event keyboard
 document.addEventListener('keydown',(event) => {
     if (event.keyCode === 39) {
-        if (rightPosition > 4){
-            rightPosition = 0;
-        } else {
-            rightPosition = rightPosition + 1
-        }
-        
-        heroSprite.style.left = `-${rightPosition*288}px`;
-        console.log('Кнопка влево');
+        movementLeft();
     }
 });
 
