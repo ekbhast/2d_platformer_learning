@@ -29,8 +29,8 @@ function movementLeft (){
 }
 
 // event keyboard
-document.addEventListener('keydown',(event) => {
-    if (event.keyCode === 39) {
+document.addEventListener('keydown',(KeyboardEvent) => {
+    if (KeyboardEvent.key === 'ArrowRight') {
         movementLeft();
     }
 });
