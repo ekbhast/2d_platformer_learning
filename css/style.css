@@ -1,4 +1,4 @@
-.heroDiv {
+.hero-div {
     width: 288px;
     height: 288px;
     overflow: hidden;
@@ -6,7 +6,7 @@
     left: 0px;
 }
 
-.heroSprite {
+.hero-sprite {
     width: 1728px;
     height: 1152px;
     position: relative;
